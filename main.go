@@ -23,7 +23,7 @@ func main() {
 
 	fmt.Println("-------------------------------------------")
 	fmt.Println("SERVER STARTED!")
-	fmt.Println("Open this link: http://10.150.28.65:9999")
+	fmt.Println("Open this link: http://YOUR IP:9999")
 	fmt.Println("-------------------------------------------")
 
 	log.Fatal(http.ListenAndServe("0.0.0.0:9999", nil))
