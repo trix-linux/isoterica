@@ -9,8 +9,8 @@ import (
 
 func main() {
 
-	if _, err := os.Stat("downloads.html"); os.IsNotExist(err) {
-		log.Fatal("ERROR: downloads.html was not found in this folder!")
+	if _, err := os.Stat("YOUR HTML FILE NAME.html"); os.IsNotExist(err) {
+		log.Fatal("ERROR: YOUR HTML FILE NAME.html was not found in this folder!")
 	}
 
 
@@ -18,7 +18,7 @@ func main() {
 		log.Printf("Request received from %s for %s", r.RemoteAddr, r.URL.Path)
 		
 		w.Header().Set("Content-Type", "text/html")
-		http.ServeFile(w, r, "downloads.html")
+		http.ServeFile(w, r, "YOUR HTML FILE NAME.html")
 	})
 
 	fmt.Println("-------------------------------------------")
